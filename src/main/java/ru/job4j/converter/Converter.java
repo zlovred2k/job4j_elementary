@@ -13,8 +13,17 @@ public class Converter {
     }
 
     public static void main(String[] args) {
-        System.out.println(rubleToEuro(1000));
-        System.out.println(rubleToDollar(2000));
+        float inEuro = 140;
+        float expectedEuro = 2;
+        float outEuro = rubleToEuro(inEuro);
+        boolean passedEuro = expectedEuro == outEuro;
+        System.out.println("140 rub = 2 euro. Test result: " + passedEuro);
+
+        float inDol = 120;
+        float expectedDol = 2;
+        float outDol = rubleToDollar(inDol);
+        boolean passedDol = expectedDol == outDol;
+        System.out.println("120 rub = 2 dol. Test result: " + passedDol);
 
     }
 }
