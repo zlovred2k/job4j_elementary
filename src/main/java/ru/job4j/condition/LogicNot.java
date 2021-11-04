@@ -26,7 +26,7 @@ public class LogicNot {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPositiv(5));
+        System.out.println(isPositiv(6));
         System.out.println(evenOrNotPositive(-5));
         System.out.println(notEven(4));
     }
