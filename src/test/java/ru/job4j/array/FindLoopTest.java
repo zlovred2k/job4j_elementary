@@ -25,13 +25,13 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind5Then5() {
+    public void whenEl5Then4() {
         int start = 1;
         int finish = 5;
         int[] data = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int el = 5;
         int result = FindLoop.indexOf(data, el, start, finish);
-        int expected = 5;
+        int expected = 4;
         assertEquals(expected, result);
     }
 
@@ -40,7 +40,7 @@ public class FindLoopTest {
         int start = 2;
         int finish = 7;
         int[] data = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int el = 11;
+        int el = 10;
         int result = FindLoop.indexOf(data, el, start, finish);
         int expected = -1;
         assertEquals(expected, result);
