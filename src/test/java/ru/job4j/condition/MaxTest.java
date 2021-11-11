@@ -42,4 +42,26 @@ public class MaxTest {
         assertEquals(expected, result);
 
     }
+
+    @Test
+    public void testMaxFor3() {
+        int first = 5;
+        int second = 2;
+        int third = 1;
+        int result = Max.max(first, second, third);
+        int expected = 5;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testMaxFor4() {
+        int first = 20;
+        int second = 5;
+        int third = 0;
+        int fourth = -1;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 20;
+        assertEquals(expected, result);
+    }
+
 }
